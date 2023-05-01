@@ -11,6 +11,14 @@ const config: GatsbyConfig = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-source-graphql`,
+      options: {
+        typeName: `data`,
+        fieldName: `data`,
+        url: `http://localhost:3000/graphql`,
+      },
+    },
   ],
   jsxRuntime: `automatic`,
 };

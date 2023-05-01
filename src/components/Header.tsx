@@ -1,21 +1,21 @@
-import { FC, useState } from 'react';
-import { Link } from 'gatsby';
+import { FC, useState } from "react";
+import { Link } from "gatsby";
 
 const Header: FC = () => {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const toggleMenu = () => setShowMenu((prevState) => !prevState);
   return (
-    <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-6 fixed w-full z-10 top-0">
+    <nav className="flex items-center justify-between flex-wrap bg-gray-800 p-4 fixed w-full z-10 top-0">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <a
+        <Link
           className="text-white no-underline hover:text-white hover:no-underline"
-          href="#"
+          to="/"
         >
           <span className="text-2xl pl-2">
             <i className="em em-grinning"></i>
             Guitar shop
           </span>
-        </a>
+        </Link>
       </div>
 
       <div className="block lg:hidden">

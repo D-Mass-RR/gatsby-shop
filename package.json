@@ -1,17 +1,12 @@
 {
-  "name": "gatsby-starter-ts",
-  "description": "A TypeScript starter for Gatsby that includes all you need to build amazing projects",
+  "name": "G-SHOP",
+  "description": "Amazing guitar shop",
   "version": "1.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (https://joaopedro.dev)",
+  "author": "@D-Mass-RR",
   "license": "MIT",
-  "keywords": [
-    "gatsby",
-    "starter",
-    "typescript"
-  ],
   "scripts": {
-    "start": "gatsby develop",
+    "start": "concurrently --kill-others \"json-graphql-server db.js\" \"GATSBY_EXPERIMENTAL_REMOTE_IMAGES=1 gatsby develop\"",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
@@ -33,11 +28,15 @@
   },
   "dependencies": {
     "gatsby": "5.9.0",
+    "gatsby-image": "3.11.0",
     "gatsby-plugin-image": "3.9.0",
     "gatsby-plugin-pnpm": "1.2.10",
     "gatsby-plugin-sharp": "5.9.0",
     "gatsby-source-filesystem": "5.9.0",
+    "gatsby-source-graphql": "5.9.0",
     "gatsby-transformer-sharp": "5.9.0",
+    "graphql": "16.6.0",
+    "json-server": "0.17.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tsconfig-paths-webpack-plugin": "4.0.1"
@@ -61,6 +60,7 @@
     "autoprefixer": "10.4.14",
     "babel-preset-gatsby": "3.9.0",
     "c8": "7.13.0",
+    "concurrently": "8.0.1",
     "eslint": "8.39.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-config-standard": "17.0.0",

@@ -1,30 +1,3 @@
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/26466516/169722691-77a6ca86-df54-4a0e-b952-48c3f3ed7526.png" alt="Gatsby TypeScript Starter">
-</p>
-
-<br />
-
-<div align="center"><strong>Non-opinionated TypeScript starter for Gatsby</strong></div>
-<div align="center">A TypeScript starter for Gatsby. No plugins and styling. Exactly the necessary to start.</div>
-
-<br />
-
-<div align="center">
-  <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&style=flat-square&color=5e17eb&labelColor=000000" alt="PRs welcome!" />
-
-  <img alt="License" src="https://img.shields.io/github/license/jpedroschmitz/gatsby-starter-ts?style=flat-square&color=5e17eb&labelColor=000000">
-
-  <a href="https://twitter.com/intent/follow?screen_name=jpedroschmitz">
-    <img src="https://img.shields.io/twitter/follow/jpedroschmitz?style=flat-square&color=5e17eb&labelColor=000000" alt="Follow @jpedroschmitz" />
-  </a>
-</div>
-
-<div align="center">
-  <sub>Created by <a href="https://twitter.com/jpedroschmitz">João Pedro</a> with the help of many <a href="https://github.com/jpedroschmitz/gatsby-starter-ts/graphs/contributors">wonderful contributors</a>.</sub>
-</div>
-
-<br />
-
 ## Features
 
 - ⚡️ Gatsby 5
@@ -40,14 +13,6 @@
 - 👷 PR Workflow — Run Type Check & Linters on Pull Requests
 - ⚙️ EditorConfig - Consistent coding styles across editors and IDEs
 - 🗂 Path Mapping — Import components or images using the `@` prefix
-
-## Quick Start
-
-The best way to start with this template is using the [Gatsby CLI](https://www.gatsbyjs.com/docs/reference/gatsby-cli/).
-
-```
-npx gatsby new starter-ts https://github.com/jpedroschmitz/gatsby-starter-ts
-```
 
 ### Development
 
@@ -91,7 +56,7 @@ Open `http://localhost:8000` with your browser to see the result.
 TypeScript are pre-configured with custom path mappings. To import components or files, use the `@` prefix.
 
 ```tsx
-import { Button } from '@/components/Button';
+import {Button} from '@/components/Button';
 
 // To import images or other files from the static folder
 import avatar from '@/static/avatar.png';
@@ -99,7 +64,10 @@ import avatar from '@/static/avatar.png';
 
 ### Switch to Yarn/npm
 
-This starter uses pnpm by default, but this choice is yours. If you'd like to switch to Yarn/npm, delete the `pnpm-lock.yaml` file, install the dependencies with Yarn/npm, change the CI workflow, Husky Git hooks to use Yarn/npm commands, and uninstall the `gatsby-plugin-pnpm` plugin (you also need to remove it from the `gatsby-config` file).
+This starter uses pnpm by default, but this choice is yours. If you'd like to switch to Yarn/npm, delete
+the `pnpm-lock.yaml` file, install the dependencies with Yarn/npm, change the CI workflow, Husky Git hooks to use
+Yarn/npm commands, and uninstall the `gatsby-plugin-pnpm` plugin (you also need to remove it from the `gatsby-config`
+file).
 
 ## License
 
